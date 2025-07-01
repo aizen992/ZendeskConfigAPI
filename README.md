@@ -87,3 +87,8 @@ This repo shows that I can:
 ## 📜 License
 
 MIT — Feel free to explore or reuse.
+
+## 🔗 Live Zendesk Environment
+
+This project was built using my trial Zendesk account:  
+👉 [Access the Zendesk instance](https://noba-97645.zendesk.com) *(view access depends on login permissions)*
