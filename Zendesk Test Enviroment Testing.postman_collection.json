@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "2a424d1d-df67-4635-b4ae-db802bc13cf9",
+		"name": "Zendesk Test Enviroment Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46251102",
+		"_collection_link": "https://marcelo-2855722.postman.co/workspace/Marcelo's-Workspace~6938ff4e-e299-4274-81c1-976c2093ddc4/collection/46251102-2a424d1d-df67-4635-b4ae-db802bc13cf9?action=share&source=collection_link&creator=46251102"
+	},
+	"item": [
+		{
+			"name": "/api/v2/search.json?query=tags:event_cancelled",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "vwGuGL4oiTMMmpAUwYM2CpI393GeNVi664AIclhk",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "benitezm92.mb@gmail.com/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ticket\": {\r\n    \"comment\": {\r\n      \"body\": \"Refund verified. Internal note only.\",\r\n      \"public\": false\r\n    },\r\n    \"tags\": [\"refund_verified\", \"internal_note\"]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://noba-97645.zendesk.com/api/v2/search.json?query=subject:\"Ticket created via API\"",
+					"protocol": "https",
+					"host": [
+						"noba-97645",
+						"zendesk",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"search.json"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "subject:\"Ticket created via API\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
